@@ -1,0 +1,14 @@
+.header-component {
+    height: 60px;
+    background-color: tomato;
+    padding: 10px;
+}
+.header-logo {
+    font-weight: 700;
+    font-size: 20px;
+    color: white;
+    flex-flow: column;
+}
+.header-sub-logo {
+    font-size: 12px;
+}

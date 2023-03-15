@@ -1,0 +1,24 @@
+.main-component {
+    height: 550px;
+    background-color: cornsilk;
+}
+.main-content-title {
+    font-size: 20px;
+    margin-top: 100px;
+    font-weight: 700;
+}
+.main-button-box {
+    margin-top: 50px;
+    height: 300px;
+}
+.main-random-button, .main-choice-button{
+    background-color: white;
+    height: 100px;
+    width: 300px;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 17px;
+}
+.main-random-button {
+    margin-top: 30px;
+}

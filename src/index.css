@@ -1,0 +1,39 @@
+
+* {
+	box-sizing: border-box;
+}
+#root {
+	width: 375px;
+	margin: 0 auto;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+.df, .jcce, .jcsb, .jcfs, .jcfe, .aice {
+	display: flex;
+}
+.jcce {
+	justify-content: center; 
+}
+.jcsb {
+	justify-content: space-between;
+}
+.aice {
+	align-items: center;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+	margin: 0;
+}
+input {
+	padding: 0;
+}
+ul {
+	list-style: none;
+	padding: 0;
+}
+.hidden {
+	display: none;
+}
