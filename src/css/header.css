@@ -1,7 +1,8 @@
 .header-component {
     height: 60px;
-    background-color: tomato;
+    background-color: #333;
     padding: 10px;
+    position: relative;
 }
 .header-logo {
     font-weight: 700;
@@ -11,4 +12,20 @@
 }
 .header-sub-logo {
     font-size: 12px;
+}
+.back-button {
+    position: absolute;
+    left: 20px;
+    top: 23px;
+}
+.back-button::after {
+    position: absolute;
+    left: 0; 
+    top: 0; 
+    content: '';
+    width: 10px; /* 사이즈 */
+    height: 10px; /* 사이즈 */
+    border-top: 5px solid white; /* 선 두께 */
+    border-right: 5px solid white; /* 선 두께 */
+    transform: rotate(225deg); /* 각도 */
 }

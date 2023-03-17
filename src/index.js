@@ -1,32 +1,28 @@
-import React, {useState} from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 
-const mode = 'home';
+const mode = 0;
 
 function reducer(state = mode, action) {
-  if(action.type == 'step1') {
-    state = action.type;
-    return state;
+  if(action.type === 'prev') {
+    if(state === 0) {
+      return state;
+    }
+    else {
+      return state  - 1;
+    }
   }
-  if(action.type == 'step2') {
-    state = action.type;
-    return state;
-  }
-  if(action.type == 'step3') {
-    state = action.type;
-    return state;
-  }
-  if(action.type == 'step4') {
-    state = action.type;
-    return state;
-  }
-  if(action.type == 'step5') {
-    state = action.type;
-    return state;
+  else if(action.type === 'next') {
+    if(state === 6) {
+      return state;
+    }
+    else {
+      return state + 1;
+    }
   }
   else {
     return state;
