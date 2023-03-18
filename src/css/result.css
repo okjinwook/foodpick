@@ -1,5 +1,6 @@
 .result-component {
     width: 330px;
+    height: 100%;
     flex-wrap: wrap;
 }
 .result-food-box {

@@ -1,7 +1,7 @@
 import './App.css';
-import Header from './components/header';
-import Main from './components/main';
-import Footer from './components/footer';
+import Header from './components/home/header';
+import Main from './components/home/main';
+import Footer from './components/home/footer';
 import React from 'react';
 
 
