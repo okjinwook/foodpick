@@ -1,9 +1,11 @@
 .result-component {
     width: 330px;
     height: 100%;
+}
+.result-foodList-box {
     flex-wrap: wrap;
 }
-.result-food-box {
+.result-food-item {
     width: 140px;
     height: 140px;
     border: 1px solid black;
@@ -13,7 +15,10 @@
     background-color: white;
     position: relative;
 }
-.result-food-box:nth-child(2n) {
+.result-food-item:nth-child(2n) {
+    margin-right: 0;
+}
+.result-food-item:last-child {
     margin-right: 0;
 }
 .result-food-name {
@@ -21,6 +26,21 @@
     top: 0;
     width: 100%;
     height: 30px;
-    background-color: white;
+    background-color: #333;
+    color: white;
+    font-size: 12px;
+    opacity: 0.6;
+}
+.result-restaurant-button {
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: #333;
+    color: white;
+    border: 1px solid #333;
+    border-radius: 5px;
     font-size: 12px;
 }

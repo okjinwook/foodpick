@@ -19,7 +19,7 @@ function stepReducer(state = mode, action) {
       }
     }
     else if(action.type === SET_NEXT) {
-      if(state === 5) {
+      if(state === 6) {
         return state;
       }
       else {

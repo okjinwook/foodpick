@@ -4,6 +4,7 @@ import Step2 from '../step/step2'
 import Step3 from '../step/step3'
 import Step4 from '../step/step4'
 import Result from '../step/result'
+import KaKaoMap from '../step/kakaoMap';
 import { useDispatch, useSelector } from 'react-redux';
 import { setNext } from '../../modules/reducer/stepReducer';
 
@@ -11,7 +12,7 @@ import { setNext } from '../../modules/reducer/stepReducer';
 function Home() {
     const dispatch = useDispatch();
     return (
-        <div className="main-content">
+        <div className="main-content jcce aice">
             <div className="main-content-title">오늘 땡기는 메뉴를 알아볼까요~?</div>
             <div className="main-button-box">
                 <button className="main-choice-button" onClick={() => {dispatch(setNext())}}>메뉴 고르기 시작</button>
@@ -40,6 +41,9 @@ function Main() {
     }
     else if(mode === 5) {
         content = <Result/>
+    }
+    else if(mode === 6) {
+        content = <KaKaoMap/>
     }
     return (
         <div className="main-component component jcce">
