@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import '../../css/result.css'
 import {foodDummy} from '../../foodDummy';
+import { setFood } from "../../modules/reducer/foodSelectReducer";
 import { setNext } from "../../modules/reducer/stepReducer";
 
 function FoodList(props) {
@@ -16,9 +17,12 @@ function FoodList(props) {
     return list.map(item => {
         return (
             <div className="result-food-item jcce aice" key={item.id}>   
-                <img src="https://png.pngtree.com/png-clipart/20220124/ourmid/pngtree-jjajangmyeon-korean-food-illustration-png-image_4353965.png" width={130}></img>
+                <img src={item.img} width={140}></img>
                 <div className="result-food-name aice jcce">{item.name}</div>
-                <button className="result-restaurant-button" onClick={ () => { dispatch(setNext()) } }>주변 맛집 찾기</button>
+                <button className="result-restaurant-button" onClick={ () => { 
+                    dispatch(setNext()) 
+                    dispatch(setFood(item.name))
+                    } }>주변 맛집 찾기</button>
             </div>
         )
     })
